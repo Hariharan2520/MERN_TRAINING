@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        #grid
+        {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            height: 200px;
+            width: 200px;
+            padding: 5%;
+            margin-left: 30%;
+        }
+        #grid>div
+        {
+            border: 2px solid black;
+            text-align: center;
+            padding-top: 20px;
+        }
+        #a
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            text-align: center;
+            background-color:bisque;
+        }
+        #b
+        {
+            grid-row-start: 2;
+            grid-row-end: 4;
+            text-align: center;
+            background-color: gray;
+        }
+        #c
+        {
+            background-color: blueviolet;
+        }
+        #d
+        {
+            background-color: purple;
+        }
+        #e
+        {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: chartreuse;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div id="a">1</div>
+        <div id="b">2</div>
+        <div id="c">3</div>
+        <div id="d">4</div>
+        <div id="e">5</div>
+    </div>
+</body>
+</html>
